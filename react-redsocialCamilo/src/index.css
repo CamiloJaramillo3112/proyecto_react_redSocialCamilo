@@ -1,0 +1,297 @@
+@import url("https://www.w3schools.com/w3css/5/w3.css");
+@import url("https://www.w3schools.com/lib/w3-theme-blue-grey.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f0f2f5;
+  color: #1c1e21;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.feed-card,
+.post-card,
+.profile-card,
+.right-card,
+.create-post-box {
+  background: #fff;
+  border: 1px solid #dddfe2;
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.create-post-box {
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.create-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.create-input {
+  flex: 1;
+  border: none;
+  background: #f0f2f5;
+  border-radius: 999px;
+  padding: 12px 16px;
+  outline: none;
+  font-size: 15px;
+}
+
+.create-textarea {
+  width: 100%;
+  border: 1px solid #dddfe2;
+  border-radius: 12px;
+  padding: 12px;
+  resize: none;
+  outline: none;
+  font-size: 15px;
+  margin-top: 12px;
+  min-height: 90px;
+}
+
+.publish-btn {
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.publish-btn:hover {
+  background: #166fe5;
+}
+
+.post-card {
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.post-avatar {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.post-meta h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.post-meta span {
+  display: block;
+  color: #65676b;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.post-text {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.post-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #65676b;
+  font-size: 14px;
+  padding: 10px 0;
+  border-top: 1px solid #e4e6eb;
+  border-bottom: 1px solid #e4e6eb;
+  margin-bottom: 10px;
+}
+
+.action-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.action-btn {
+  border: none;
+  background: transparent;
+  border-radius: 10px;
+  padding: 10px 8px;
+  font-weight: 700;
+  color: #65676b;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.action-btn:hover {
+  background: #f2f2f2;
+}
+
+.comment-box {
+  margin-top: 10px;
+}
+
+.comment-input {
+  width: 100%;
+  border: 1px solid #dddfe2;
+  border-radius: 20px;
+  padding: 10px 14px;
+  outline: none;
+  background: #f0f2f5;
+}
+
+.comment-btn {
+  margin-top: 8px;
+  background: #e7f3ff;
+  color: #1877f2;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.comment-item {
+  background: #f0f2f5;
+  border-radius: 14px;
+  padding: 10px 12px;
+  margin-top: 12px;
+}
+
+.comment-author {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.comment-text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.reply-wrap {
+  margin-left: 18px;
+  margin-top: 8px;
+}
+
+.reply-item {
+  background: #e4e6eb;
+  border-radius: 10px;
+  padding: 8px 10px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.reply-input {
+  width: 100%;
+  border: 1px solid #dddfe2;
+  border-radius: 20px;
+  padding: 8px 12px;
+  outline: none;
+  background: white;
+  margin-top: 8px;
+}
+
+.reply-btn {
+  margin-top: 6px;
+  background: transparent;
+  border: none;
+  color: #1877f2;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+}
+
+.profile-card,
+.right-card {
+  padding: 14px;
+  margin-bottom: 16px;
+}
+
+.topbar-logo {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.soft-muted {
+  color: #65676b;
+}
+
+.section-btn {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: transparent;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.section-btn:hover {
+  background: #f2f2f2;
+}
+
+.divider {
+  height: 1px;
+  background: #e4e6eb;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .action-row {
+    grid-template-columns: 1fr;
+  }
+
+  .post-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .create-top {
+    flex-direction: row;
+  }
+}
